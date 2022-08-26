@@ -1,0 +1,11 @@
+file_format: "1"
+id: keyboard
+name: keyboard
+type: shield
+url: 
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - keyboard_left
+  - keyboard_right

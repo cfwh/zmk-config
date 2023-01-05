@@ -12,6 +12,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: keyboard_left
+    shield: OTG_left
   - board: nice_nano_v2
-    shield: keyboard_right
+    shield: OTG_right

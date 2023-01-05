@@ -1,17 +1,17 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_KEYBOARD_LEFT
+if SHIELD_OTG_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "Keyboard"
+	default "OTG"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_KEYBOARD_LEFT || SHIELD_KEYBOARD_RIGHT
+if SHIELD_OTG_LEFT || SHIELD_OTG_RIGHT
 
 config ZMK_SPLIT
 	default y

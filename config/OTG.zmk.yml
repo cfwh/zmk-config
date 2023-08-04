@@ -1,0 +1,11 @@
+file_format: "1"
+id: OTG
+name: OTG
+type: shield
+url: 
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - OTG_left
+  - OTG_right

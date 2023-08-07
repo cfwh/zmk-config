@@ -236,17 +236,24 @@
 				    };   
 		   tdf1: tap_dance_f1 {
 				     compatible = "zmk,behavior-tap-dance";
-				     label = "TAP_DANCE_0";
+				     label = "TAP_DANCE_F1";
 				     #binding-cells = <0>;
 				     tapping-term-ms = <200>;
 				     bindings = <&kp F1>, <&kp F11>;
 				    };
 		   tdf2: tap_dance_f2 {
 				     compatible = "zmk,behavior-tap-dance";
-				     label = "TAP_DANCE_0";
+				     label = "TAP_DANCE_F2";
 				     #binding-cells = <0>;
 				     tapping-term-ms = <200>;
 				     bindings = <&kp F2>, <&kp F22>;
+				    };
+		   tdr: tap_dance_r {
+				     compatible = "zmk,behavior-tap-dance";
+				     label = "TAP_DANCE_R";
+				     #binding-cells = <0>;
+				     tapping-term-ms = <200>;
+				     bindings = <&sys_reset>, <&bootloader>;
 				    };
 		  };
 	macros {
@@ -289,9 +296,9 @@
 		};
 		set_layer {
 			bindings = <
-				&none		&kp C_PREV   &kp C_RW	   &kp C_PP	 &none	     &kp C_FF	    &kp C_NEXT	 &none	       &none	 &none
-				&kp C_BRI_DN    &kp C_BRI_UP &kp C_VOL_DN  &kp C_VOL_UP	 &kp C_MUTE  &bt BT_CLR	    &bt BT_SEL 0 &bt BT_SEL 1  &none     &out OUT_TOG
-				&none		&none	     &none	   &none	 &sys_reset  &bootloader    &none	 &none	       &none	 &none
+				&none		&kp C_PREV   &kp C_RW	   &kp C_PP	 &none	     &none	    &none	 &kp C_FF      &kp C_NEXT &none
+				&kp C_BRI_DN    &kp C_BRI_UP &kp C_VOL_DN  &kp C_VOL_UP	 &kp C_MUTE  &bt BT_CLR	    &bt BT_SEL 0 &bt BT_SEL 1  &none	  &out OUT_TOG
+				&none		&none	     &none	   &none	 &tdr	     &tdr	    &none	 &none	       &none	  &none
 				                &trans	     &none         &none	 &none       &none	    &trans
 			>;
 		};

@@ -234,6 +234,20 @@
 				     tapping-term-ms = <200>;
 				     bindings = <&kp LGUI>, <&sk LGUI>;
 				    };   
+		   tdf1: tap_dance_f1 {
+				     compatible = "zmk,behavior-tap-dance";
+				     label = "TAP_DANCE_0";
+				     #binding-cells = <0>;
+				     tapping-term-ms = <200>;
+				     bindings = <&kp F1>, <&kp F11>;
+				    };
+		   tdf2: tap_dance_f2 {
+				     compatible = "zmk,behavior-tap-dance";
+				     label = "TAP_DANCE_0";
+				     #binding-cells = <0>;
+				     tapping-term-ms = <200>;
+				     bindings = <&kp F2>, <&kp F22>;
+				    };
 		  };
 	macros {
         	dot_com_enter: dot_com_enter {
@@ -285,7 +299,7 @@
 			bindings = <
 				&none		&none	     &none	   &none	 &none	     &none	    &kp F7	 &kp F8	       &kp F9    &none	
 				&none		&none	     &none	   &none	 &none	     &none	    &kp F4	 &kp F5	       &kp F6    &none
-				&none		&none	     &none	   &none	 &none	     &none	    &kp F1	 &kp F2        &kp F3    &none
+				&none		&none	     &none	   &none	 &none	     &none	    &tdf1	 &tdf2	       &kp F3    &none
 				                &none	     &none         &none	 &none       &none	    &none
 			>;
 		};

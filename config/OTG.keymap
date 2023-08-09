@@ -238,14 +238,14 @@
 				     compatible = "zmk,behavior-tap-dance";
 				     label = "TAP_DANCE_F1";
 				     #binding-cells = <0>;
-				     tapping-term-ms = <200>;
+				     tapping-term-ms = <500>;
 				     bindings = <&kp F1>, <&kp F11>;
 				    };
 		   tdf2: tap_dance_f2 {
 				     compatible = "zmk,behavior-tap-dance";
 				     label = "TAP_DANCE_F2";
 				     #binding-cells = <0>;
-				     tapping-term-ms = <200>;
+				     tapping-term-ms = <500>;
 				     bindings = <&kp F2>, <&kp F22>;
 				    };
 		   tdr: tap_dance_r {
@@ -283,7 +283,7 @@
 				&kp GRAVE	&kp AMPS     &kp CARET	     &kp PRCNT	  &none	      &none	&kp N7	  &kp N8    &kp N9    &none
 				&kp PLUS	&kp MINUS    &kp STAR        &kp SLASH	  &kp DLLR    &kp DOT	&kp N4	  &kp N5    &kp N6    &kp N0
 				&kp TILDE	&kp HASH     &kp AT    	     &kp EXCL	  &none	      &none	&kp N1	  &kp N2    &kp N3    &sl FUN
-				        	&none	     &kp ENTER	     &none	  &none	      &none	&trans
+				        	&none	     &kp ENTER	     &none	  &tdr	      &none	&trans
 			>;
 		};
 		nav_layer {
@@ -291,7 +291,7 @@
 				&kp LC(Y)       &kp LC(Z)    &kp LC(C)	   &kp LC(V)	 &kp LC(X)   &kp ESC	    &kp PG_UP    &kp PG_DN     &kp HOME  &kp END
 				&kp LA(LS(TAB)) &kp LA(TAB)  &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(F)   &kp TAB	    &kp UP	 &kp DOWN      &kp LEFT	 &kp RIGHT
 				&kp LA(F4)      &td1	     &sk LALT	   &sk LCTRL	 &kp LSHFT   &dot_com_enter &kp LC(PLUS) &kp LC(MINUS) &kp K_APP &kp LG(LS(S))
-				                &trans       &none         &none         &kp BSPC    &kp ENTER	    &kp DEL
+				                &trans       &none         &tdr		 &kp BSPC    &kp ENTER	    &kp DEL
 			>;
 		};
 		set_layer {

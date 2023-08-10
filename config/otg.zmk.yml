@@ -1,11 +1,11 @@
 file_format: "1"
-id: OTG
-name: OTG
+id: otg
+name: otg
 type: shield
 url: 
 requires: [pro_micro]
 features:
   - keys
 siblings:
-  - OTG_left
-  - OTG_right
+  - otg_left
+  - otg_right

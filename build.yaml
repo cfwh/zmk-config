@@ -1,5 +1,5 @@
 include:
   - board: nice_nano_v2
-    shield: OTG_left
+    shield: otg_left
   - board: nice_nano_v2
-    shield: OTG_right
+    shield: otg_right

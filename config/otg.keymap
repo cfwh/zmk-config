@@ -63,16 +63,9 @@
 		    layers = <DEF>;
 		};
 
-		combo_minus {
-		    timeout-ms = <50>;
-		    key-positions = <0 10>;
-		    bindings = <&kp MINUS>;
-		    layers = <DEF>;
-		};
-
 		combo_underscore {
 		    timeout-ms = <50>;
-		    key-positions = <4 14>;
+		    key-positions = <0 10>;
 		    bindings = <&kp UNDER>;
 		    layers = <DEF>;
 		};

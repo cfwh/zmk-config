@@ -283,7 +283,7 @@
 			bindings = <
 				&kp LC(Y)       &kp LC(Z)    &kp LC(C)	   &kp LC(V)	 &kp LC(X)   &kp ESC	    &kp PG_UP    &kp PG_DN     &kp HOME  &kp END
 				&kp LA(LS(TAB)) &kp LA(TAB)  &kp LC(PG_UP) &kp LC(PG_DN) &kp LC(F)   &kp TAB	    &kp UP	 &kp DOWN      &kp LEFT	 &kp RIGHT
-				&kp LA(F4)      &td1	     &sk LALT	   &sk LCTRL	 &kp LSHFT   &dot_com_enter &kp LC(PLUS) &kp LC(MINUS) &kp K_APP &kp LG(LS(S))
+				&kp LA(F4)      &td1	     &sk LALT	   &sk LCTRL	 &sk LSHFT   &dot_com_enter &kp LC(PLUS) &kp LC(MINUS) &kp K_APP &kp LG(LS(S))
 				                &trans       &none	   &bootloader	 &kp BSPC    &kp ENTER	    &kp DEL
 			>;
 		};
